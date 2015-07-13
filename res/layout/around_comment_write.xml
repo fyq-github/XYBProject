@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/frg_activity_actionbar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="25px"
+            android:layout_marginTop="25px"
+            android:text="评论" 
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/aff_det_keyword_bottom" />
+    <LinearLayout 
+        android:id="@+id/p1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center"
+       
+        
+        >
+         <TextView
+       
+      android:layout_width="10dip"
+      android:layout_height="30dip"
+       
+     />
+
+        <EditText
+            android:id="@+id/mycomment"
+            android:layout_width="fill_parent"
+            android:layout_height="200sp"
+            android:layout_gravity="center_vertical|center"
+            android:background="@drawable/rounded_edittext"
+            android:hint="请输入..."
+            android:maxLength="80" >
+
+            <requestFocus />
+        </EditText>
+
+   <TextView
+       
+      android:layout_width="0dip"
+      android:layout_height="20dip"
+       
+     />
+    
+    <Button
+        android:id="@+id/submitcomment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:layout_gravity="right"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="发送" />
+    </LinearLayout>
+
+</LinearLayout>

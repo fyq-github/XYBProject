@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!-- <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back" />  -->
+   
+
+    <LinearLayout
+        android:id="@+id/f0"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center"
+            android:background="#7FFF00"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/activity_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简要信息"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/care"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="5dp"
+            android:background="#00A1BE"
+            android:text="关注" />
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="5dp"
+            android:background="#00A1BE"
+            android:text="分享" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activitycontentview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="活动内容"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/activitycontent"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:text="活动内容。。。。。。。"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:text="我要报名" />
+
+</LinearLayout>

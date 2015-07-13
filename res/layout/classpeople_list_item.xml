@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+<ImageView 
+    android:id="@+id/classpeople_userphoto"
+     android:layout_width="wrap_content"
+     android:src="@drawable/userphoto_default"
+     android:layout_marginLeft="20px"
+     android:layout_marginBottom="4px"
+     android:layout_marginTop="4px"
+    android:layout_height="wrap_content"/>
+<TextView 
+    android:id="@+id/classpeople_position"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20px"
+    android:layout_gravity="center_vertical"
+    android:text="职位"
+    android:textSize="18dp"
+    />
+<TextView 
+    android:id="@+id/classpeople_rname"
+    android:text="姓名"
+     android:textSize="18dp"
+      android:layout_marginLeft="20px"
+      android:layout_gravity="center_vertical"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+</LinearLayout>

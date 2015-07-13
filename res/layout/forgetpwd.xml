@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FFFFFFFF"
+   
+    android:orientation="vertical" >
+ <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        />"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7FFF00" 
+        android:layout_gravity="center"
+       
+        android:scaleType="centerInside"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/L1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮箱" />
+
+        <EditText
+            android:id="@+id/emailedittext"
+            android:layout_width="10px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            android:hint="请输入邮箱" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L10"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验 证 码:" />
+
+        <EditText
+            android:id="@+id/vc_code"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/vc_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/vc_shuaixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新验证码"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/forgetpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00A1BE"
+            android:gravity="center"
+            android:text="找回密码"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

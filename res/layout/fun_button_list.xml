@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/fmst_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/usercallde"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="暂无昵称" />
+
+        <TextView
+            android:id="@+id/allneirong"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usercallde"
+            android:text="暂无内容" />
+
+        <ImageView
+            android:id="@+id/fun_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/allneirong"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:src="@drawable/first_splash_pager" />
+
+        <ImageView
+            android:id="@+id/fun_pic1"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/fun_pic"
+            android:maxHeight="100dp"
+            android:maxWidth="20dp"
+            android:src="@drawable/pinlun" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fun_pic1"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/fun_listlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

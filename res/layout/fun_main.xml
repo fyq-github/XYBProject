@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dip" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国家庭院校园区域名字体现"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:gravity="center" >
+
+                <View
+                    android:id="@+id/v_dot0"
+                    style="@style/dot_style"
+                    android:background="@drawable/dot_focused" />
+
+                <View
+                    android:id="@+id/v_dot1"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot2"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot3"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot4"
+                    style="@style/dot_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/fr1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/schoolbeauty"
+            android:layout_width="150sp"
+            android:layout_height="90sp"
+            android:layout_alignBottom="@+id/schoolzha"
+            android:layout_alignParentTop="true"
+            android:background="#F598B3"
+            android:text="校花"
+            android:textColor="#FFFF" />
+
+        <Button
+            android:id="@+id/schoolba"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_toRightOf="@id/schoolbeauty"
+             android:textColor="#FFFF"
+            android:background="#F6C5B4"
+            android:text="学霸" />
+
+        <Button
+            android:id="@+id/schoolzha"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_below="@id/schoolba"
+            android:layout_marginBottom="25sp"
+             android:textColor="#FFFF"
+            android:layout_toRightOf="@id/schoolbeauty"
+            android:background="#25CBB5"
+            android:text="学渣" />
+
+        <Button
+            android:id="@+id/schoolbeau"
+            android:layout_width="150sp"
+            android:layout_height="90sp"
+            android:layout_alignBottom="@+id/schoolzha"
+            android:layout_alignTop="@id/schoolba"
+            android:layout_toRightOf="@id/schoolba"
+             android:textColor="#FFFF"
+            android:background="#C8DEB4"
+            android:text="校草" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fr2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/tucao"
+            android:layout_width="180sp"
+            android:layout_height="60sp"
+             android:textColor="#FFFF"
+            android:layout_alignParentTop="true"
+            android:background="#FFAD5B"
+            android:text="吐槽" />
+
+        <Button
+            android:id="@+id/maimeng"
+            android:layout_width="180sp"
+            android:layout_height="60sp"
+            android:layout_alignParentTop="true"
+             android:textColor="#FFFF"
+            android:layout_toRightOf="@id/tucao"
+              android:background="#715D9E"
+            android:text="卖萌" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fr3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/gaobai"
+            android:layout_width="fill_parent"
+             android:textColor="#FFFF"
+            android:layout_height="75sp"
+            android:background="#EF4150"
+            android:text="告白" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.xyb"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:name="cn.xyb.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.xyb.ui.main.LoadingGuideActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data android:name="UMENG_APPKEY"  android:value="YOUR APP KEY" />
+        <meta-data  android:name="UMENG_CHANNEL" android:value="Channel ID" />
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+<!-- 友盟自动更新组件 -->
+<activity
+    android:name="com.umeng.update.UpdateDialogActivity"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+</activity>
+        <!-- 闪屏  渐变 -->
+        <activity
+            android:name="cn.xyb.ui.main.SplashActivity"
+            android:screenOrientation="portrait" />
+        <!-- 登录界面 -->  
+        <activity
+            android:name="cn.xyb.ui.main.LoginActivity"
+            android:screenOrientation="portrait" />
+        <!-- 搜索界面 -->  
+        <activity
+            android:name="cn.xyb.ui.main.SearchActivity"
+            android:screenOrientation="portrait" />
+        <!--主界面 --> 
+         <activity
+            android:name="cn.xyb.ui.main.MainActivity"
+            android:screenOrientation="portrait" />
+         <!--注册界面 --> 
+         <activity
+            android:name="cn.xyb.ui.main.RegisterActivity"
+            android:screenOrientation="portrait" />
+          <!--忘记密码界面 --> 
+         <activity
+            android:name="cn.xyb.ui.main.ForgetPwdActivity"
+            android:screenOrientation="portrait" />
+          <!--活动详情界面 --> 
+         <activity
+            android:name="cn.xyb.ui.activities.ActivityDetailActivity"
+            android:screenOrientation="portrait" />
+         <!--活动报名填写信息界面 --> 
+         <activity
+            android:name="cn.xyb.ui.activities.ActivitySignInfoActivity"
+            android:screenOrientation="portrait" />
+          <!--周边每个条目详情界面 --> 
+         <activity
+            android:name="cn.xyb.ui.around.AroundItemDetailActivity"
+            android:screenOrientation="portrait" />
+          <!--周边条目编辑评论界面 --> 
+         <activity
+            android:name="cn.xyb.ui.around.AroundPubCommentActivity"
+            android:screenOrientation="portrait" />
+          <!--班级简介界面 --> 
+         <activity
+            android:name="cn.xyb.ui.clas.ClassIntroducActivity"
+            android:screenOrientation="portrait" />
+         <!--班级相册界面 --> 
+         <activity
+            android:name="cn.xyb.ui.clas.ClassPictruesActivity"
+            android:screenOrientation="portrait" />
+          <!--班级时光轴界面 --> 
+         <activity
+            android:name="cn.xyb.ui.clas.ClassTimeActivity"
+            android:screenOrientation="portrait" />
+         <!--班级个人简介主界面 --> 
+         <activity
+            android:name="cn.xyb.ui.clas.PersonIntroducActivity"
+            android:screenOrientation="portrait" />
+         <!--班级个人时光轴界面 --> 
+         <activity
+            android:name="cn.xyb.ui.clas.PersonTimeActivity"
+            android:screenOrientation="portrait" />
+         <!--班级个人荣誉墙界面 --> 
+         <activity
+            android:name="cn.xyb.ui.clas.PersonHonorActivity"
+            android:screenOrientation="portrait" />
+          <!--趣吧条目详情界面 --> 
+         <activity
+            android:name="cn.xyb.ui.fun.FunItemDetailActivity"
+            android:screenOrientation="portrait" />
+           <!--趣吧告白墙界面 --> 
+         <activity
+            android:name="cn.xyb.ui.fun.FunLoveActivity"
+            android:screenOrientation="portrait" />
+         <!--趣吧发布告白界面 --> 
+         <activity
+            android:name="cn.xyb.ui.fun.FunLovePublishActivity"
+            android:screenOrientation="portrait" />
+         <!--资讯写评语界面 --> 
+         <activity
+            android:name="cn.xyb.ui.info.InfoCommentsActivtity"
+            android:screenOrientation="portrait" />
+         <!--资讯自己发布的信息界面 --> 
+         <activity
+            android:name="cn.xyb.ui.info.InfoMyselfActivity"
+            android:screenOrientation="portrait" />
+         <!--资讯引用别人的新闻界面 --> 
+         <activity
+            android:name="cn.xyb.ui.info.InfoNewActivity"
+            android:screenOrientation="portrait" />
+         <!--资讯新闻编辑评论界面 --> 
+         <activity
+            android:name="cn.xyb.ui.info.InfoNewCommentEditActivity"
+            android:screenOrientation="portrait" />
+         <!--用户修改密码界面 --> 
+         <activity
+            android:name="cn.xyb.ui.main.user.ChangePwdActivity"
+            android:screenOrientation="portrait" />
+         <!--用户创建相册界面 --> 
+         <activity
+            android:name="cn.xyb.ui.main.user.CreatePicturesActivity"
+            android:screenOrientation="portrait" />
+         <!--用户个人信息界面 --> 
+         <activity
+            android:name="cn.xyb.ui.main.user.PersonInfoActivity"
+            android:screenOrientation="portrait" />
+         <!--用户个人主界面 --> 
+         <activity
+            android:name="cn.xyb.ui.main.user.PersonMainActivity"
+            android:screenOrientation="portrait" />
+         <!--用户个人相册界面 --> 
+         <activity
+            android:name="cn.xyb.ui.main.user.PersonPicturesActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+    
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.CAMERA"/>
+
+</manifest>

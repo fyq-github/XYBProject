@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:id="@+id/L0"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center"
+            android:background="#7FFF00"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/registerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="填写注册信息"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L1"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/phonenumberview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号" />
+
+        <EditText
+            android:id="@+id/phonenumberedittest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号"
+            android:phoneNumber="true"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L2"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/emailview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮箱" />
+
+        <EditText
+            android:id="@+id/emailedittest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入邮箱"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L3"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/passwdview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码" />
+
+        <EditText
+            android:id="@+id/passwdedittest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入木密码"
+            android:password="true"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L4"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/passwdagainview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码" />
+
+        <EditText
+            android:id="@+id/passwdagainedittest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请再一次输入密码"
+            android:password="true"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="个人信息"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/L5"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/schoolview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学校" />
+
+        <EditText
+            android:id="@+id/schooledittest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入学校"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L6"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/departmentview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="院系" />
+
+        <EditText
+            android:id="@+id/departmentedittest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入院系"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L7"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/engineeringview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专业" />
+
+        <EditText
+            android:id="@+id/engineeringedittest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入专业"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L8"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/gradeview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="班级" />
+
+        <EditText
+            android:id="@+id/gradeedittest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入班级"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L9"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/studentidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学号" />
+
+        <EditText
+            android:id="@+id/studentidedittest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入学号"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L10"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验 证 码:" />
+
+        <EditText
+            android:id="@+id/vc_code"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/vc_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/vc_shuaixin"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="刷新"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/vc_ok"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="#00A1BE"
+        android:scaleType="centerInside"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+</LinearLayout>

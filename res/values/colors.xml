@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="none">#00000000</color>
+    <color name="transparent">#00000000</color>
+     <!-- 白色 -->
+    <color name="white">#FFFFFFFF</color>
+    <!-- 浅蓝 -->
+    <color name="frg_activity_actionbar">#32A2EF</color>
+    <!-- 选中时字体颜色 -->
+    <color name="txtselect">#32A2EF</color>
+    <!-- 未选中时字体颜色 -->
+    <color name="txtnormal">#4B4646</color>
+    <!-- 左拉框条目点击背景颜色 -->
+    <color name="left_back">#95B7D6</color>
+    <!-- 浅蓝 -->
+    <color name="low_blue">#32A2EF</color>
+    <!-- 修改密码 -->
+     <color name="change_pwd">#F598B3</color>
+     <!-- 我的简历 -->
+     <color name="my_resume">#25CBB5</color>
+     <!-- 个人动态 -->
+     <color name="personal_dongtai">#C8DEB4</color>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/frg_activity_actionbar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="25px"
+            android:layout_marginTop="25px"
+            android:text="详情"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/aff_det_keyword_bottom" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_bar"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="140dip"
+            android:src="@drawable/a" />
+
+        <LinearLayout
+            android:id="@+id/I1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格：" />
+
+            <TextView
+                android:id="@+id/priceinformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无价格" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/aff_det_keyword_bottom" />
+
+        <LinearLayout
+            android:id="@+id/I2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="相关信息：" />
+
+            <TextView
+                android:id="@+id/Relatedinformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无信息" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/aff_det_keyword_bottom" />
+
+        <LinearLayout
+            android:id="@+id/I3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐：" />
+
+            <TextView
+                android:id="@+id/recommendinformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无推荐" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/aff_det_keyword_bottom" />
+
+        <LinearLayout
+            android:id="@+id/I4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温馨提示：" />
+
+            <TextView
+                android:id="@+id/promptinformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无提示信息" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/aff_det_keyword_bottom" />
+    </LinearLayout>
+
+    
+    
+       <Button
+                android:id="@+id/commentbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:background="#00A1BE"
+                android:text="评论" />
+    <LinearLayout
+        android:id="@+id/I5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pingjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新评价" />
+         <ListView
+                android:id="@+id/aroundcommentlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </ListView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/aff_det_keyword_bottom" />
+
+</LinearLayout>
